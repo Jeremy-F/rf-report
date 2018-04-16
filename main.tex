@@ -1,0 +1,128 @@
+\documentclass{article}
+
+%***********************************%
+%                                   %
+%      Insertion des packages       %
+%                                   %
+%***********************************%
+\usepackage{titling}
+\usepackage[francais]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\usepackage[export]{adjustbox}
+%***********************************%
+%               [END]               %
+%      Insertion des packages       %
+%               [END]               %
+%***********************************%
+
+
+
+\newcommand\todo[1]{\textcolor{red}{\Huge{{#1}}}}
+
+%***********************************%
+%                                   %
+%     Declaration des variables     %
+%                                   %
+%***********************************%
+
+\title{Étude du Spectre Électromagnétique \\et\\ Récupération d’Énergie}
+
+\author{
+    Alexandre \textsc{Causse} -
+    Jeremy \textsc{Fornarino} -
+    Maxime \textsc{Lepetit}   - \\
+    Bryan \textsc{Pereira}    -
+    Antoine \textsc{Tantot}   -
+    \small{
+        \textit{
+            (Loann \textsc{Boudin})
+        }
+    }
+}
+%***********************************%
+%               [END]               %
+%     Declaration des variables     %
+%               [END]               %
+%***********************************%
+
+
+
+
+
+\begin{document}
+
+    %% Les premieres pages
+    %% ont leurs propre numérotation
+    %% en chiffres romain (I, II, ...) !
+    \pagenumbering{Roman}
+    %***********************************%
+    %                                   %
+    %        Page de couverture         %
+    %                                   %
+    %***********************************%
+    \input{components/global/cover}
+    %***********************************%
+    %               [END]               %
+    %        Page de couverture         %
+    %               [END]               %
+    %***********************************%
+
+
+
+
+    %***********************************%
+    %                                   %
+    %           AVANTS-TEXTE            %
+    %                                   %
+    %            Page blanche           %
+    %           Remerciements           %
+    %              Sommaire             %
+    %               Figures             %
+    %              Glossaire            %
+    %***********************************%
+    \input{components/global/front}
+    %***********************************%
+    %               [END]               %
+    %            AVANTS-TEXTE           %
+    %               [END]               %
+    %***********************************%
+
+
+
+
+    %% Les premieres pages
+    %% ont leurs propre numérotation
+    %% en chiffres arabes (1, 2, 3...) !
+    \pagenumbering{arabic}
+
+
+    \input{components/context/main}
+
+    \input{components/spa/main}
+
+
+
+
+    \clearpage
+    \pagenumbering{Roman}
+    %***********************************%
+    %                                   %
+    %            POSTS-TEXTE            %
+    %                                   %
+    %           Bibliographies          %
+    %         Annexes Techniques        %
+    %              Sommaire             %
+    %***********************************%
+    \input{components/global/post.tex}
+    %***********************************%
+    %               [END]               %
+    %            POSTS-TEXTE            %
+    %               [END]               %
+    %***********************************%
+
+\end{document}
+
